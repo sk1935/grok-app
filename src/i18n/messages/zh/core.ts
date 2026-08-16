@@ -2,7 +2,7 @@
 export const zhCore = {
   "app.name": "Grok",
   "app.tagline": "MIT · 非 xAI 官方 · 姐妹项目 grok-go",
-  "app.versionFooter": "Grok v0.2.19 · MIT · 非 xAI 官方 · 姐妹项目 grok-go",
+  "app.versionFooter": "Grok v0.2.19-wf1 · MIT · 非 xAI 官方 · 已加 /workflow",
   "window.minimize": "最小化",
   "window.maximize": "最大化",
   "window.restore": "还原",
