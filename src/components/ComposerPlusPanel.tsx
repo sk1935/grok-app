@@ -502,10 +502,11 @@ export function ComposerPlusPanel({
         const item = entry.item;
         const title = resolveTitle(item);
         const desc = resolveDescription(item);
-        const right =
-          desc.trim() ||
-          (item.kind === "skill" && item.source ? item.source : "") ||
-          `/${item.name}`;
+        const slashName =
+          item.kind === "skill" ? "" : `/${item.name}`;
+        const right = [slashName, desc.trim() || (item.kind === "skill" && item.source ? item.source : "")]
+          .filter((s) => typeof s === "string" && s.trim())
+          .join(" · ");
 
         return (
           <button
